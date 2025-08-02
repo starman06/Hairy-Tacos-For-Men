@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hairy Taco Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #1e1e1e;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #commentButton {
+      padding: 15px 25px;
+      font-size: 16px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+    #commentButton:hover {
+      background-color: #0056b3;
+    }
+    #hairyImage {
+      width: 350px;
+      height: 350px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="commentButton">Comment The Image</button>
+  <img id="hairyImage" src="hairy_taco.png" alt="Hairy Taco" />
+
+  <script>
+    document.getElementById('commentButton').addEventListener('click', function() {
+      console.log("That's Some Hairy Taco. Mmmmmmmmmmmmmm... Yeah, Thats Some Good Hairy Taco");
+    });
+  </script>
+
+</body>
+</html>
